@@ -1,4 +1,4 @@
-# AngularCliI18nSample
+# [Deploying an i18n Angular app with angular-cli](https://dev.to/angular/deploying-an-i18n-angular-app-with-angular-cli-2fb9)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
 
