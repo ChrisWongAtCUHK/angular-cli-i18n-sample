@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "http-server ./dist",
     "build-i18n": "for lang in en es fr; do ng build --output-path=dist/$lang --aot --prod --base-href /$lang/ --i18n-file=src/i18n/messages.$lang.xlf --i18n-format=xlf --i18n-locale=$lang; done",
+    "predeploy": "for lang in en es fr; do ng build --output-path=dist/$lang --aot --prod --base-href /angular-cli-i18n-sample/$lang/ --i18n-file=src/i18n/messages.$lang.xlf --i18n-format=xlf --i18n-locale=$lang; done",
+    "deploy": "gh-pages -d dist",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -32,6 +34,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "gh-pages": "^3.0.0",
     "http-server": "^0.12.3",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
